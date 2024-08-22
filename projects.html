@@ -125,9 +125,7 @@
 							</h6>
 
 							<p>
-								xxxxxxxxxxxxxxxxx xxxxxxxx xxxxxxxxxxx xxxx xxxxxxxxxxxxxxxxx xxxxxxxx xxxxxxxxxxx xxxx
-								xxxxxxxxxxxxxxxxx xxxxxxxx xxxxxxxxxxx xxxx xxxxxxxxxxxxxxxxx xxxxxxxx xxxxxxxxxxx
-
+								Declares reassignable variables in JavaScript.
 							</p>
 
 							<div class="border-start border-primary border-3 py-1 px-3 my-5">
@@ -142,8 +140,7 @@
 								Aug 20, 2024 &ndash; short answer questions.
 							</h6>
 							<p>
-								xxxxxxxxxxxxxxxxx xxxxxxxx xxxxxxxxxxx xxxx xxxxxxxxxxxxxxxxx xxxxxxxx xxxxxxxxxxx xxxx
-								xxxxxxxxxxxxxxxxx xxxxxxxx xxxxxxxxxxx xxxx xxxxxxxxxxxxxxxxx xxxxxxxx xxxxxxxxxxx
+								Using the 'function' keyword or an arrow function.
 							</p>
 
 							<div class="mt-5">
@@ -185,7 +182,7 @@
 						<a href="#" class="w-25 p-2 shadow-md rounded text-center text-decoration-none">
 							<img class="img-fluid rounded w-100" src="images/project1.jpg" alt="...">
 							<h3 class="h6 my-3 w-100">
-								<span class="text-dark">Project 1</span>
+								<span class="text-dark" id="p1">Project 1</span>
 							</h3>
 						</a>
 					</div>
@@ -194,7 +191,7 @@
 						<a href="#" class="w-25 p-2 shadow-md rounded text-center text-decoration-none">
 							<img class="img-fluid rounded w-100" src="images/project2.jpg" alt="...">
 							<h3 class="h6 my-3 w-100">
-								<span class="text-dark">Project 2</span>
+								<span class="text-dark" id="p2">Project 2</span>
 							</h3>
 						</a>
 					</div>
@@ -203,7 +200,7 @@
 						<a href="#" class="w-25 p-2 shadow-md rounded text-center text-decoration-none">
 							<img class="img-fluid rounded w-100" src="images/project3.jpg" alt="...">
 							<h3 class="h6 my-3 w-100">
-								<span class="text-dark">Project 3</span>
+								<span class="text-dark" id="p3">Project 3</span>
 							</h3>
 						</a>
 					</div>
@@ -212,7 +209,7 @@
 						<a href="#" class="w-25 p-2 shadow-md rounded text-center text-decoration-none">
 							<img class="img-fluid rounded w-100" src="images/project4.jpg" alt="...">
 							<h3 class="h6 my-3 w-100">
-								<span class="text-dark">Project 4</span>
+								<span class="text-dark" id="p4">Project 4</span>
 							</h3>
 						</a>
 					</div>
@@ -221,7 +218,7 @@
 						<a href="#" class="w-25 p-2 shadow-md rounded text-center text-decoration-none">
 							<img class="img-fluid rounded w-100" src="images/project5.jpg" alt="...">
 							<h3 class="h6 my-3 w-100">
-								<span class="text-dark">Project 5</span>
+								<span class="text-dark" id="p5">Project 5</span>
 							</h3>
 						</a>
 					</div>
@@ -274,6 +271,22 @@
 		<!-- /Footer -->
 
 	</div><!-- /#wrapper -->
+
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+	<script>
+		const p1 = prompt("Name project 1")
+		const p2 = prompt("Name project 2")
+		const p3 = prompt("Name project 3")
+		const p4 = prompt("Name project 4")
+		const p5 = prompt("Name project 5")
+
+		$("#p1").html(p1)
+		$("#p2").html(p2)
+		$("#p3").html(p3)
+		$("#p4").html(p4)
+		$("#p5").html(p5)
+	</script>
 
 </body>
 
